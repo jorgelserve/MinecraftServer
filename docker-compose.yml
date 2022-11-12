@@ -1,0 +1,38 @@
+version: "3"
+
+services:
+  mc:
+    build: .
+    container_name: papermc
+    environment:
+      EULA: "TRUE"
+      ENABLE_RCON: "true"
+      TYPE: PAPER
+      VERSION: 1.19.2
+      SEED: -2681661291433035115
+      VIEW_DISTANCE: 10
+      MEMORY: 2G
+      CONSOLE: "true"
+      ONLINE_MODE: "false"
+      WORLD: /worlds/
+      ENFORCE_WHITELIST: "true"
+      ICON: /MJ.png
+      BEDROCK_PORT: 19132
+      JAVA_PORT: 25565
+
+      VANILLATWEAKS_FILE: /vanillatweaks-datapacks.json,/vanillatweaks-resourcepacks.json
+      REMOVE_OLD_VANILLATWEAKS: "TRUE"
+
+    ports:
+      - 25565:25565/tcp
+      - 25575:25575
+      - 19132:19132/udp
+
+    restart: "no"
+    volumes:
+      - ./vanillatweaks-datapacks.json:/vanillatweaks-datapacks.json:ro
+      - ./vanillatweaks-resourcepacks.json:/vanillatweaks-resourcepacks.json:ro
+      - ./worlds:/worlds:ro
+      - ./MJ.png:/MJ.png:ro
+      - ./mc-paper:/data
+

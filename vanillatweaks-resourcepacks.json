@@ -1,0 +1,19 @@
+{
+	"type": "resourcepacks",
+	"version": "1.19",
+	"packs": {
+		"hud": [
+			"RainbowExperience"
+		],
+		"aesthetic": [
+			"WarmGlow",
+			"RedIronGolemFlowers",
+			"CircularSunandMoon"
+		],
+		"unobtrusive": [
+			"BorderlessGlass",
+			"BetterParticles"
+		]
+	},
+	"result": "ok"
+}
