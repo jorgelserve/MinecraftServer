@@ -46,7 +46,7 @@ remote:
   # Authentication type. Can be offline, online, or floodgate (see https://github.com/GeyserMC/Geyser/wiki/Floodgate).
   # For plugin versions, it's recommended to keep the `address` field to "auto" so Floodgate support is automatically configured.
   # If Floodgate is installed and `address:` is set to "auto", then "auth-type: floodgate" will automatically be used.
-  auth-type: offline
+  auth-type: floodgate
   # Allow for password-based authentication methods through Geyser. Only useful in online mode.
   # If this is false, users must authenticate to Microsoft using a code provided by Geyser on their desktop.
   allow-password-authentication: false
@@ -91,10 +91,10 @@ passthrough-motd: false
 # This will also show up on sites like MCSrvStatus. <mcsrvstat.us>
 passthrough-protocol-name: false
 # Relay the player count and max players from the remote server to Bedrock players.
-passthrough-player-counts: false
+passthrough-player-counts: true
 # Enable LEGACY ping passthrough. There is no need to enable this unless your MOTD or player count does not appear properly.
 # This option does nothing on standalone.
-legacy-ping-passthrough: false
+legacy-ping-passthrough: true
 # How often to ping the remote server, in seconds. Only relevant for standalone or legacy ping passthrough.
 # Increase if you are getting BrokenPipe errors.
 ping-passthrough-interval: 3

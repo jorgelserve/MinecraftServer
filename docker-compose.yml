@@ -8,7 +8,7 @@ services:
       EULA: "TRUE"
       ENABLE_RCON: "true"
       TYPE: PAPER
-      VERSION: 1.19.2
+      VERSION: 1.19.3
       SEED: -2681661291433035115
       VIEW_DISTANCE: 10
       MEMORY: 2G
@@ -19,7 +19,7 @@ services:
       ICON: /MJ.png
       BEDROCK_PORT: 19132
       JAVA_PORT: 25565
-
+      TZ: America/Kingston
       VANILLATWEAKS_FILE: /vanillatweaks-datapacks.json,/vanillatweaks-resourcepacks.json
       REMOVE_OLD_VANILLATWEAKS: "TRUE"
 
